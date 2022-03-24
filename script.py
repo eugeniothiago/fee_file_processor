@@ -29,7 +29,7 @@ user_input = input('Por favor, digite o número correspondente à pasta contendo
 
 while user_input not in index_list:
     while not user_input.isdigit():
-        user_input = input('Por favor, digite o número da pasta contendo os dados brutos:')
+        user_input = input('Caractere informado não é um dígito. Por favor, digite o número correspondente à pasta contendo os dados brutos:')
         if not user_input.isdigit():
             print('Caractere inserido não é um número. Digite novamente')
     user_input = input('Digito informado não corresponde a uma pasta listada. Por favor, digite o número correspondente à pasta contendo os dados brutos:')
