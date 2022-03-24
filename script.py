@@ -14,7 +14,6 @@ project_dir = Path("script.py").resolve().parents[0]
 
 print('Iniciando o script')
 
-user_input = input('Por favor, digite o número correspondente à pasta contendo os dados brutos:')
 
 index_list=[]
 folder_list = os.listdir(project_dir)
@@ -25,6 +24,8 @@ for idx,folder in enumerate(folder_list):
         print(f'{idx} - {folder}')
         index_list.append(str(idx))
     pass
+
+user_input = input('Por favor, digite o número correspondente à pasta contendo os dados brutos:')
 
 while user_input not in index_list:
     while not user_input.isdigit():
