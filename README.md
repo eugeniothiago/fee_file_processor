@@ -1,5 +1,5 @@
 # Fee Files Processor
-Um script python para processar arquivos da FEE em **nível municipal**.
+Um script python para processar arquivos da [FEE](https://dados.fee.tche.br/) em **nível municipal (agregação geográfica municipal)**.
 
 ### Instruções:
 * Copie o script principal (**script.py**) para o mesmo nível da pasta que contém os dados a serem processados. A cópia pode ser feita através de um git clone de todo o repositório ou o download somente do script via navegador;
