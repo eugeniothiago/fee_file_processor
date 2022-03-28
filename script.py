@@ -45,7 +45,7 @@ for archive in raw_data_list:
         sys.exit()
     else:
         name, extension = os.path.splitext(archive)
-        if extension =='.csv':
+        if extension =='.zip':
             with ZipFile(f'{folder}/{archive}','r') as zipfile:
                 if not os.path.exists('fee_data'):
                     os.mkdir('fee_data')
