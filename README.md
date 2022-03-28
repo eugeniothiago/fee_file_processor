@@ -1,5 +1,5 @@
 # Fee Files Processor
-Um script python para processar arquivos da [FEE](https://dados.fee.tche.br/) em **nível municipal (agregação geográfica municipal)**.
+Um script python para processar arquivos da [FEE](https://dados.fee.tche.br/) na **agregação geográfica municipal**.
 
 ### Instruções:
 * Copie o script principal (**script.py**) para o mesmo nível da pasta que contém os dados a serem processados. A cópia pode ser feita através de um git clone de todo o repositório ou o download somente do script via navegador;
@@ -11,4 +11,4 @@ O script terá 2 outputs:
 * Um arquivo chamado ***dataset.csv*** contendo todos os arquivos da pasta *data* já mesclados.
 
 O arquivo ***dataset.csv*** é um *dataframe* com estrutura de dados em painel, onde cada linha representa uma observação de um município em um dado ano e as características (*features*) que foram extraídas dos arquivos processados.
-Sugestões e feedbacks sobre o script são bem vindos, bem como a abertura de PRs com melhorias e/ou correções de bugs! :D
+Sugestões e feedbacks sobre o script são bem vindos, bem como a abertura de PRs com melhorias e/ou correções de bugs!
