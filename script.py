@@ -39,6 +39,10 @@ folder = f'{project_dir}/{folder_list[int(user_input)]}'
 # lẽ todos os arquivos .zip e descompacta na pasta raw_data:
 print(f'Descompactando os arquivos .zip contidos na pasta {folder}:')
 raw_data_list = [data for data in os.listdir(folder)]
+
+if not os.path.exists('fee_data'):
+    os.mkdir('fee_data')
+        
 for archive in raw_data_list:
     if not raw_data_list:
         print('Não há nenhum arquivo .zip na pasta raw_data. O script será encerrado.')
@@ -47,8 +51,6 @@ for archive in raw_data_list:
         name, extension = os.path.splitext(archive)
         if extension =='.zip':
             with ZipFile(f'{folder}/{archive}','r') as zipfile:
-                if not os.path.exists('fee_data'):
-                    os.mkdir('fee_data')
                 zipfile.extractall(f'{project_dir}/fee_data/')
 del archive, name, extension, raw_data_list
 gc.collect()
